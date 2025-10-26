@@ -12,6 +12,10 @@ body {
   color: #000;
 }
 
+.wraper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* container for nav bar */
 .container {
   width: 100%;
@@ -25,7 +29,7 @@ body {
   width: 100%;
   height: 5rem;
   background-color: #fff;
-  padding: 0 4rem;
+  padding: 0 8px;
 }
 
 /* Hamburg menu  */
@@ -35,12 +39,10 @@ body {
 
 /* Nav bar flex setup */
 .nav-bar-flex {
-  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
 /* List item flex */
@@ -49,6 +51,7 @@ body {
   flex-wrap: wrap;
   justify-content: left;
   gap: 40px;
+  /* display: none; */
 }
 
 a {
@@ -58,9 +61,39 @@ a {
 ul {
   list-style: none;
 }
+h1 {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+}
 
-@media (max-width: 1024px) {
-  .nav-bar .hamburgmenu {
-    display: none;
+main .abstract-info-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px dashed #000;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  /* Tablet-specific styles */
+  .container .nav-bar-flex .menus {
+    /* display: block; */
+    /* background-color: rgba(13, 13, 118, 0.716); */
   }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  /* Desktop-specific styles */
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  /* Large screen optimizations */
 }
