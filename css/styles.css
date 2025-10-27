@@ -62,7 +62,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-ul {
+.menus ul {
   list-style: none;
 }
 h1 {
@@ -83,21 +83,34 @@ main .abstract-info-flex {
   border-right: 2px dashed #000;
 }
 
+main .material {
+  display: flex;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   /* Tablet-specific styles */
-  .container .nav-bar-flex .menus {
+  /* .container .nav-bar-flex .menus {
     /* display: block; */
-    /* background-color: rgba(13, 13, 118, 0.716); */
+  /* background-color: rgba(13, 13, 118, 0.716); */
+
+  main .live {
+    padding: 16px 0;
   }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
   /* Desktop-specific styles */
+  main .live {
+    padding: 26px 0;
+  }
 }
 
 /* Large Desktop */
 @media (min-width: 1440px) {
   /* Large screen optimizations */
+  main .live {
+    padding: 36px 0;
+  }
 }
