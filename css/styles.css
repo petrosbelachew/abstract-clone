@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+:root {
+  --black-color: #000;
+}
 /* body format */
 body {
   font-family: Archivo, sans-serif;
@@ -12,6 +15,7 @@ body {
   color: #000;
 }
 
+/* Wrap the nav and sections in a specific format */
 .wraper {
   max-width: 1200px;
   margin: 0 auto;
