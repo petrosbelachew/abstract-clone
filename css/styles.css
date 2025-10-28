@@ -34,6 +34,7 @@ body {
   height: 5rem;
   background-color: #fff;
   padding: 0 8px;
+  position: sticky;
 }
 
 /* Hamburg menu  */
@@ -76,7 +77,7 @@ h2 {
 main .abstract-info-flex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
@@ -85,6 +86,47 @@ main .abstract-info-flex {
 
 main .material {
   display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+
+  border-bottom: 2px solid #000;
+  /* margin: 0 auto; */
+}
+
+main .items {
+  /* Give each item one-third of the space */
+  /* width: 33.33%; */
+  /* The base size is 0, so they start small */
+  /* flex-basis: 0; */
+  /* They all grow equally to fill the space */
+  /* flex-grow: 1; */
+  margin: 0;
+
+  flex: 1;
+  padding: 0;
+}
+main .material .item-1 {
+  /* border-right: 2px solid #000; */
+}
+main .material .item-2 {
+  /* border-right: 2px solid #000; */
+}
+/* format the items in the material section */
+main .material .items {
+  /* border-left: 2px solid #000; */
+}
+
+main .material .resoucres {
+  display: flex;
+  flex-direction: column;
+}
+
+main .material .resoucres .links {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Tablet */
