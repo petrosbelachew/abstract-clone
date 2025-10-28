@@ -13,6 +13,7 @@ body {
   font-family: Archivo, sans-serif;
   line-height: 1.5;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 /* Wrap the nav and sections in a specific format */
@@ -21,12 +22,15 @@ body {
   margin: 0 auto;
 }
 /* container for nav bar */
-.container {
+.nav-container {
   width: 100%;
   border-bottom: 2px solid #000;
   padding: 0 16px;
   font-size: 1.5rem;
   font-weight: 700;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 /* Nav bar section formatting */
 .nav-bar {
@@ -34,11 +38,14 @@ body {
   height: 5rem;
   background-color: #fff;
   padding: 0 8px;
-  position: sticky;
 }
 
 /* Hamburg menu  */
 .nav-bar .hamburgmenu {
+  display: block;
+}
+
+.nav-bar .menus {
   display: none;
 }
 
@@ -103,14 +110,18 @@ main .items {
   /* flex-basis: 0; */
   /* They all grow equally to fill the space */
   /* flex-grow: 1; */
-  margin: 0;
-
   flex: 1;
   padding: 0;
+  margin: 0 4rem;
+  display: flex;
+  flex-direction: column;
 }
 main .material .item-1 {
-  /* border-right: 2px solid #000; */
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: end; */
 }
+
 main .material .item-2 {
   /* border-right: 2px solid #000; */
 }
@@ -138,6 +149,12 @@ main .material .resoucres .links {
 
   main .live {
     padding: 16px 0;
+  }
+  .nav-bar .menus {
+    display: block;
+  }
+  .nav-bar .hamburgmenu {
+    display: none;
   }
 }
 
