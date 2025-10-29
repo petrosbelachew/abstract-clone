@@ -14,7 +14,6 @@ body {
   line-height: 1.5;
   color: #000;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /* Wrap the nav and sections in a specific format */
@@ -80,6 +79,11 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 main .abstract-info-flex {
@@ -90,6 +94,10 @@ main .abstract-info-flex {
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
   border-right: 2px dashed #000;
+
+  .abstarct-more {
+    padding-bottom: 10px;
+  }
 }
 
 main .material {
@@ -115,7 +123,7 @@ main .items {
   width: 100%;
   flex: 1;
   /* padding: 0; */
-  margin: 0 1.5rem;
+  margin: 0 1.2rem;
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid #000;
@@ -130,9 +138,8 @@ main .items {
   h3 {
     padding: 0px;
     text-align: left;
-    margin-bottom: 25px;
-    margin-top: 15px;
-    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 25px;
   }
 
   ul {
@@ -141,6 +148,7 @@ main .items {
     padding-inline-start: 40px;
     /* padding-inline-end: 40px; */
     margin-left: 20px;
+    margin-top: 0;
     margin-bottom: 20px;
     padding: 0px;
   }
@@ -148,7 +156,70 @@ main .items {
 
 .material .item-2 {
   /* border-right: 2px solid #000; */
+  display: flex;
   border-bottom: 2px solid #000;
+  padding-top: 10px;
+
+  .color-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+
+    .color p {
+      padding-top: 5px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .color-purple {
+      display: flex;
+      gap: 10px;
+    }
+
+    .color .color-purple-background {
+      width: 30px;
+      height: 30px;
+      background: #4c5fd5;
+      border-radius: 50%;
+    }
+
+    .color-black {
+      /* make the black color palet flex */
+      display: flex;
+      gap: 10px;
+    }
+    .color .color-black-background {
+      width: 30px;
+      height: 30px;
+      background: #000;
+      border-radius: 50%;
+    }
+    .color-lg-blue {
+      /* make the light gray blue  color palet flex */
+      display: flex;
+      gap: 10px;
+    }
+    .color .color-lg-blue-background {
+      /* Add the lightgray blue color as background with 50% radious */
+      width: 30px;
+      height: 30px;
+      background: #dadbf1;
+      border-radius: 50%;
+    }
+    .color-white {
+      /* make the white  color palet flex */
+      display: flex;
+      gap: 10px;
+    }
+    .color .color-white-background {
+      /* Add the white color as background with 50% radious */
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+  }
 }
 /* format the items in the material section */
 main .material .items {
@@ -158,11 +229,15 @@ main .material .items {
 main .material .resoucres {
   display: flex;
   flex-direction: column;
+
+  margin-top: 10px;
 }
 
 main .material .resoucres .links {
   display: flex;
   flex-direction: column;
+  text-decoration: underline;
+  padding-bottom: 10px;
 }
 
 /* Tablet */
