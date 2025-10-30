@@ -7,6 +7,8 @@
 
 :root {
   --black-color: #000;
+  --lg-blue-color: #dadbf1;
+  --bottom-border: 2px solid #000;
 }
 /* body format */
 body {
@@ -164,11 +166,14 @@ main .items {
   display: flex;
   border-bottom: 2px solid #000;
   padding-top: 10px;
+  flex-wrap: wrap;
 
   .color-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
     gap: 20px;
     padding-bottom: 20px;
     flex: 1;
@@ -247,6 +252,32 @@ main .material .resoucres .links {
   padding-bottom: 10px;
 }
 
+.extra-info {
+  border-bottom: var(--bottom-border);
+  padding: 50px 0;
+}
+.extra-info-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-info .extra-info-container {
+  padding: 25px;
+  color: white;
+  margin: 0px 1rem 1rem;
+}
+.extra-info .challenge {
+  background: var(--black-color);
+}
+.extra-info .easy {
+  background: var(--lg-blue-color);
+}
+.extra-info .hard {
+  background: white;
+  border: 2px solid black;
+  color: var(--black-color);
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   /* Tablet-specific styles */
@@ -278,6 +309,7 @@ main .material .resoucres .links {
       border-bottom: 0;
       align-items: center;
       padding: 0;
+
       h3 {
         padding: 0;
       }
@@ -287,14 +319,21 @@ main .material .resoucres .links {
       /* flex: 1 1 0; */
 
       border-right: 2px solid black;
-      align-items: center;
-      padding: 0 16px 16px;
-    }
 
-    .resoucres {
-      border-bottom: 0;
+      padding: 0 16px 16px;
       align-items: center;
+      margin: 0;
     }
+    .color {
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .resoucres {
+    border-bottom: 0;
+    align-items: center;
   }
 }
 
