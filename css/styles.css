@@ -112,6 +112,11 @@ main .material {
 
   border-bottom: 2px solid #000;
   /* margin: 0 auto; */
+
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
 }
 
 main .items {
@@ -265,13 +270,17 @@ main .material .resoucres .links {
     flex-direction: row;
     border-left: 2px solid black;
     border-right: 2px solid black;
+    align-items: stretch;
 
     /* background-color: #4c5fd5; */
     .item-1 {
       border-right: 2px solid black;
-
       border-bottom: 0;
       align-items: center;
+      padding: 0;
+      h3 {
+        padding: 0;
+      }
     }
     .item-2 {
       border-bottom: 0;
@@ -279,7 +288,7 @@ main .material .resoucres .links {
 
       border-right: 2px solid black;
       align-items: center;
-      /* flex-shrink: 0; */
+      padding: 0 16px 16px;
     }
 
     .resoucres {
