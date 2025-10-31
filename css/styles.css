@@ -22,7 +22,7 @@ body {
 
 /* Wrap the nav and sections in a specific format */
 .wraper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /* container for nav bar */
@@ -258,6 +258,9 @@ main .material .resoucres {
   flex-direction: column;
 
   margin-top: 10px;
+  a:hover {
+    color: blue;
+  }
 }
 
 main .material .resoucres .links {
