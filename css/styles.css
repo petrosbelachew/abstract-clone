@@ -17,6 +17,7 @@ body {
   color: #000;
   scroll-behavior: smooth;
   transition: 0.3s;
+  overflow-x: hidden;
 }
 
 /* Wrap the nav and sections in a specific format */
