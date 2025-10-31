@@ -265,6 +265,7 @@ main .material .resoucres .links {
   padding: 25px;
   color: white;
   margin: 0px 1rem 1rem;
+  /* flex:1; */
 }
 .extra-info .challenge {
   background: var(--black-color);
@@ -272,10 +273,23 @@ main .material .resoucres .links {
 .extra-info .easy {
   background: var(--lg-blue-color);
 }
+
 .extra-info .hard {
   background: white;
   border: 2px solid black;
   color: var(--black-color);
+  a {
+    text-decoration: underline;
+  }
+}
+
+img {
+  width: 100%;
+}
+.ref-image {
+  border: 2px solid var(--black-color);
+  border-radius: 10px;
+  padding: 30px;
 }
 
 /* Tablet */
@@ -296,6 +310,7 @@ main .material .resoucres .links {
   .nav-bar .hamburgmenu {
     display: none;
   }
+
   main .material {
     display: flex;
     flex-direction: row;
@@ -329,11 +344,28 @@ main .material .resoucres .links {
       padding: 0;
       margin: 0;
     }
+
+    .resoucres {
+      border-bottom: 0;
+      align-items: center;
+    }
   }
 
-  .resoucres {
-    border-bottom: 0;
-    align-items: center;
+  .extra-info-flex {
+    /* flex-wrap: wrap; */
+  }
+  .extra-info {
+    display: flex;
+
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .extra-info-container {
+    max-width: 350px;
+  }
+  .extra-info .hard {
+    flex-basis: 100%;
+    width: auto;
   }
 }
 
@@ -350,5 +382,9 @@ main .material .resoucres .links {
   /* Large screen optimizations */
   main .live {
     padding: 36px 0;
+  }
+  .extra-info .hard {
+    flex-basis: auto;
+    max-width: 350px;
   }
 }
