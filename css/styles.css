@@ -21,7 +21,7 @@ body {
 
 /* Wrap the nav and sections in a specific format */
 .wraper {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 /* container for nav bar */
@@ -38,9 +38,22 @@ body {
 /* Nav bar section formatting */
 .nav-bar {
   width: 100%;
-  height: 5rem;
+  height: 3.5rem;
   background-color: #fff;
   padding: 0 8px;
+
+  .nav-bar-item img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 5px;
+  }
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
 }
 
 /* Hamburg menu  */
@@ -90,17 +103,22 @@ h3 {
 }
 
 main .abstract-info-flex {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
-  border-right: 2px dashed #000;
+  border-right: 2px solid #000;
 
   .abstarct-more {
     padding-bottom: 10px;
   }
+}
+
+.abstarct-more .live span a:hover {
+  color: #4c5fd5;
 }
 
 main .material {
@@ -296,8 +314,8 @@ main .material .resoucres .links {
 }
 img {
   max-width: 100%;
-  height: 100%;
-  object-fit: cover;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .ref-image {
   border: 2px solid var(--black-color);
@@ -324,6 +342,9 @@ footer {
   a {
     color: #fff;
     display: block;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
