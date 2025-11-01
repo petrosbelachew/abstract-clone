@@ -273,8 +273,6 @@ main .material .resoucres .links {
 .extra-info {
   border-bottom: var(--bottom-border);
   padding: 50px 0;
-  border-left: var(--bottom-border);
-  border-right: var(--bottom-border);
 }
 .extra-info-flex {
   display: flex;
@@ -304,8 +302,6 @@ main .material .resoucres .links {
 }
 
 .image-wrap {
-  border-left: var(--bottom-border);
-  border-right: var(--bottom-border);
   padding: 30px;
 }
 .image-section {
@@ -421,6 +417,9 @@ footer {
   }
   .footer-items {
     align-items: center;
+    padding: 0;
+    margin: 0;
+
     .pages {
       display: flex;
       flex-wrap: wrap;
@@ -435,6 +434,11 @@ footer {
   /* Desktop-specific styles */
   main .live {
     padding: 26px 0;
+  }
+  .extra-info,
+  .image-wrap {
+    border-right: var(--bottom-border);
+    border-left: var(--bottom-border);
   }
 }
 
