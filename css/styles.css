@@ -18,6 +18,7 @@ body {
   scroll-behavior: smooth;
   transition: 0.3s;
   overflow-x: hidden;
+  margin: 0;
 }
 
 /* Wrap the nav and sections in a specific format */
@@ -110,8 +111,6 @@ main .abstract-info-flex {
   justify-content: space-evenly;
   align-items: center;
   border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
 
   .abstarct-more {
     padding-bottom: 10px;
@@ -436,6 +435,7 @@ footer {
     padding: 26px 0;
   }
   .extra-info,
+  .abstract-info-flex,
   .image-wrap {
     border-right: var(--bottom-border);
     border-left: var(--bottom-border);
